@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body{
+    background-image:linear-gradient(to right, #4EF565, #66F4DA, #A0F5AC);
+
+}
+
+h1{
+    text-align: center;
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+}
