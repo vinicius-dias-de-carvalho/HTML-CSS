@@ -8,24 +8,51 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        
+        caption {
+         font-size: 1.5em;
+         font-weight: bold;
+         padding: 10px;
+         background-color: lightgrey;
+        }
 
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
 
         }
-        thead {
-            background-color: gray;
+        thead > tr > th {
+             position: sticky;
+             top: -1px;
+             background-color: rgba(10, 9, 9, 0.5);
+     
+
+        }
+
+        thead, tfoot {
+            background-color: rgba(39, 34, 34, 0.5);
             color: white;
         }
-        tfoot {
-            background-color: gray;
-            color: white;
+        
+        
+        
+        tbody > tr:nth-child(even) { /*2n*/
+              background-color: white;
+              
+
         }
+
+        tbody > tr:nth-child(odd) { /*2n-1 */
+             background-color: lightgray;
+             
+
+        }
+
         td.num {
             text-align: right;
         }
@@ -36,6 +63,7 @@
     <!--
       ANATOMIA PARA TABELAS GRANDES
       TABLE 
+         CAPTION
            THEAD 
               TR, TD, TH
            TBODY 
@@ -43,12 +71,14 @@
            TFFOT
                TR, TD, TH
     -->
+
                <table>
+                  <CAPtion>população das unidades federativas </CAPtion>
                 <thead>
                    <tr>
-                    <th>
+                    <th scope="col">
                        estado</th>
-                    <th>população</th>
+                    <th scope="col" style="width: 50px;">população</th>
                    </tr>
                 </thead>
 
@@ -170,5 +200,13 @@
 
 
                </table>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis inventore commodi rerum doloribus iusto magnam eum porro neque voluptatibus deleniti placeat, distinctio quisquam nostrum alias blanditiis et similique tenetur laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae eos laborum vero laboriosam, similique ipsam voluptatum provident ipsa temporibus soluta architecto explicabo quis quos! Esse aliquam tenetur modi veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore labore autem laudantium et, soluta, obcaecati odit ullam magnam, ratione quibusdam incidunt molestias. Consectetur laborum possimus consequatur officia facere sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi laborum vitae necessitatibus modi odio cumque. Officia voluptatum repellat aliquam quasi suscipit pariatur iusto aliquid obcaecati ex vero. Unde, tempore.</p>
 </body>
 </html>
